@@ -1,14 +1,14 @@
-/*5¹ø*/
+/*5ë²ˆ*/
 import java.util.*;
 
 public class Depth {
 
 	public static void main(String[] args) {
-		// 0Àº ¶¥, 1Àº ¹°
+		// 0ì€ ë•…, 1ì€ ë¬¼
 		int land = 0;
 		int water = 1;
 
-		// ¿ø·¡ÀÇ array
+		// ì›ë˜ì˜ array
 		int [][] depth = {
 				{0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,1,0,0,0,0,0},
@@ -21,7 +21,7 @@ public class Depth {
 				{0,0,0,0,1,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0}
 				};
-		// ºñ±³´ë»ó array
+		// ë¹„êµëŒ€ìƒ array
 		int [][] compare = new int[10][10];
 		
 		while(true){
@@ -39,10 +39,11 @@ public class Depth {
 				}
 				System.out.println();
 			}
+			System.out.println();
 			water++;
 			
-			// arrayÀÇ °ªÀ» ºñ±³ÇÏ¿© ¸ğµç °ªÀÌ °°À¸¸é whileÀ» break;
-			// ±×·¸Áö ¾ÊÀ¸¸é compareÀ» depthÀÇ °ªÀ¸·Î Ä¡È¯
+			// arrayì˜ ê°’ì„ ë¹„êµí•˜ì—¬ ëª¨ë“  ê°’ì´ ê°™ìœ¼ë©´ whileì„ break;
+			// ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ compareì„ depthì˜ ê°’ìœ¼ë¡œ ì¹˜í™˜
 			if(Arrays.deepEquals(depth, compare)) {
 				break;
 			}
